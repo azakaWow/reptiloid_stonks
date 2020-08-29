@@ -42,18 +42,25 @@ fn print_results(results: Vec<Result>, total_amount: f64, clean_profit: f64 )  {
     let results_len = results.len();
     for i in 0..results.len() {
         let result = &results[i];
-        println!("");
-        println!("");
-        println!("");
-        println!("=============");
-        println!("For stock №{}", i);
-        println!("=============");
+
+        if results_len > 1  {
+            println!("=============");
+            println!("For stock №{}", i);
+            println!("=============");
+        }
+
         println!("You had: {}", result.amount);
         println!("You bought {} for {}", result.amount_of_stocks, result.current_stock_price);
         println!("You expect this stock to be {}", result.expected_stock_price);
         println!("If this happens before you had {} and NOW you have {}", result.amount, result.new_amount);
         println!("Clean profit will be {}", result.clean_profit);
-        println!("=============");
+        
+        if results_len > 1  {
+            println!("=============");
+            println!("");
+            println!("");
+            println!("");
+        }
     }
 
     if results_len > 1 {
