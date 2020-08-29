@@ -2,7 +2,7 @@
 Dummy cli program to calc stonks
 
 
-How to it works, basically you write down the following (after compiling binaries)
+How to it works, basically you write down the following (after building binaries)
 
 rptls AMOUNT_OF_MONEY_YOU_HAVE-CURRENT_PRICE-EXPECTED_PRICE
 
