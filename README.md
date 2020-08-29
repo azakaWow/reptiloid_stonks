@@ -1,4 +1,4 @@
-# rptls
+# rptls AKA Reptiloid stonks
 Dummy cli program to calc stonks
 
 
