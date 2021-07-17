@@ -33,6 +33,7 @@ fn main() {
         total_amount+=stock_result.new_amount;
         total_clean_profit+=stock_result.clean_profit;
         total.push(stock_result);
+        println!("\n");
     }
 
     print_results(total,total_amount, total_clean_profit)
@@ -56,24 +57,15 @@ fn print_results(results: Vec<Result>, total_amount: f64, clean_profit: f64 )  {
         println!("Clean profit will be {}", result.clean_profit);
         
         if results_len > 1  {
-            println!("=============");
-            println!("");
-            println!("");
-            println!("");
+            println!("=============\n");
         }
     }
 
     if results_len > 1 {
-        println!("");
-        println!("");
-        println!("");
         println!("=============");
         println!("Total new amount is {}", total_amount);
         println!("Total clean profit is {}", clean_profit);
         println!("=============");
-        println!("");
-        println!("");
-        println!("");
     }
 }
 
